@@ -2,7 +2,7 @@
 header a {
   text-decoration: none;
 }
-header > div:first-child > span:first-child a {
+header > div:first-child > div:first-child > span:first-child a {
   font-size: 2rem;
   color: #9195f6;
   font-weight: 700;
@@ -15,10 +15,10 @@ header > div:first-child > div:nth-child(2) > span:first-child a {
 }
 header > div:first-child > div:nth-child(2) > span:last-child > a {
   color: #a3c9aa;
-  font-size: 2.4rem;
+  font-size: 2.8rem;
   font-weight: 700;
 }
-header > div:first-child > div:last-child > span:first-child a {
+header > div:first-child > div:nth-child(3) > span:first-child a {
   font-size: 2rem;
   color: #9195f6;
   font-weight: 700;
@@ -40,33 +40,34 @@ footer > div:first-child {
   border: 2px solid rgb(119, 40, 188);
   margin-top: 1rem;
 }
-footer > .index-contact > div:first-child {
-  background-color: red;
+footer > div:first-child > div:first-child {
+  background-color: #bf3131;
   width: 400px;
-  text-align: center;
   margin: 60px auto;
   padding: 20px;
 }
-footer > .index-contact > div:first-child span {
-  padding-left: 22px;
+footer span {
+  margin-left: 35px;
 }
-footer > .index-contact > div:first-child > span:last-child {
+footer > .index-info > div:first-child > span:last-child,
+footer > .gallery-info > div:first-child > span:first-child,
+footer > .contact-info > div:first-child > span:nth-child(2),
+footer > .about-info > div:first-child > span:nth-child(3) {
   font-size: 1.5rem;
   color: rgb(178, 178, 23);
-  margin-left: 15px;
 }
+
 /* main section */
-main > div {
-  padding: 20px;
-}
-main > div:first-child > div:first-child > p:first-child {
+main > .index-text > div:first-child > p:first-child {
   color: #caa6a6;
   font-size: 25px;
 }
-main > div:first-child {
+main {
   background-color: #f5eee6;
+  padding: 25px;
+  margin-top: 20px;
 }
-main > div:first-child > div:nth-child(2) > p {
+main > .index-text > div:nth-child(2) > p {
   background-color: #3e3232;
   color: #db5e5e;
   border: 2px solid #9c7474;
@@ -74,7 +75,7 @@ main > div:first-child > div:nth-child(2) > p {
   margin: auto;
   padding: 15px;
 }
-main > div:first-child > div:nth-child(3) > p {
+main > .index-text > div:nth-child(3) > p {
   background-color: #d24546;
   color: white;
   font-size: 25px;
@@ -84,4 +85,39 @@ main > div:first-child > div:nth-child(3) > p {
   margin: auto;
   margin-top: 15px;
   margin-bottom: 20px;
+}
+.gallery-images {
+  background-color: #2f4d30;
+  width: 815px;
+  height: 180px;
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+}
+.gallery-images img {
+  border: 2px solid rgb(196, 130, 7);
+}
+.gallery-images > img:first-child,
+img:nth-child(3) {
+  width: 265px;
+}
+.gallery-images > img:nth-child(2) {
+  width: 200px;
+  height: 135px;
+}
+.contact-center > div:first-child {
+  background-color: #fb8b24;
+  width: 508px;
+  height: 280px;
+  margin: auto;
+  border-radius: 10px;
+  padding: 20px;
+}
+.contact-center > div:first-child img {
+  width: 250px;
+}
+.contact-center > div:nth-child(2) {
+  background-color: #b2a49b;
+  padding: 40px;
+  margin-top: 20px;
 }
